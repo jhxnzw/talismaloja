@@ -1,0 +1,355 @@
+
+    /* Estilos globais */
+* {
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    background-color: #2e1b33;
+    color: white;
+    padding: 25px;
+  }
+  .carrossel {
+    width: 1347px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    position: relative;
+  }
+  
+  .imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .imagem {
+    min-width: 1359px;
+  }
+  .buttoncarrosel1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: -700px;
+    top: -136px;
+  }
+  .buttoncarrosel2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    right: -560px;
+    top: -175px;
+  }
+  
+  .buttonst {
+    position: absolute;
+    left: 81%;
+    top: 10%;
+  }
+  section {
+    margin-top: -30px; /* Posição do ponto específico na página */
+    height: 50px;
+    background-color: #56345f;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    top: -25px;
+  }
+  .rolarbt {
+    position: relative;
+    top: -180px;
+  }
+  .rolarbt2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: -70px;
+  }
+  
+  .txt {
+    font-size: 12px;
+    margin-top: 27px;
+    position: relative;
+    left: -32px;
+    top: 11px;
+  }
+  
+  .textoprodutos {
+    position: relative;
+    left: 50%x;
+    top: -40px;
+    color: #ffffff;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #2e1b33;
+    color: white;
+    padding: 25px;
+    display: absolute;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    border: none;
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #56345f;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    color: #ffffff;
+    border-radius: 7px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    gap: 15px;
+  
+    position: relative;
+    padding: 10px;
+    top: -2px;
+    left: 71px;
+  }
+  
+  .buttonestagiario {
+    position: absolute;
+    left: 0.6%;
+    top: 15%;
+  }
+  
+  .txtbv {
+    font-size: 21px;
+    background-color: #56345f;
+    padding: 15px;
+    color: #ffffff;
+    box-shadow: 0px 5px 15px #56345f;
+    font-family: sans-serif;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    padding: 250px;
+    margin-top: -60px;
+    padding-top: 0%;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  
+  .product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000000;
+  }
+  
+  .product-description {
+    font-size: 0.9em;
+    color: #000000;
+    margin-top: 5px;
+  }
+  
+  .product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #56345f;
+    margin-top: 10px;
+  }
+  
+  .product-button {
+    border: 1px solid #56345f;
+    background-color: #56345f;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-button:hover {
+    background-color: #a871b8;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .products-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #56345f;
+    color: #56345f;
+  }
+  
+  footer {
+    background-color: #2e1b33;
+    color: #ffffff;
+    padding: 25px;
+  }
+  
+  /* Responsividade para telas menores (até 768px) */
+  @media (max-width: 768px) {
+    button {
+      position: static;
+      margin-top: 15px;
+      left: auto;
+      top: auto;
+    }
+  
+    .cardqr,
+    .cardqr2 {
+      width: 100%;
+      left: 0;
+      box-shadow: none;
+    }
+  
+    .txtbv {
+      font-size: 22px;
+      padding: 10px;
+    }
+  
+    .card-img {
+      height: auto;
+    }
+  
+    
+  }
+  
+  /* Responsividade para telas menores que 480px */
+  .card-button {
+    font-size: 0.75rem;
+  }
+  
+  .card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    gap: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    position: relative;
+    margin: -18px;
+    top: 55px;
+    left: 71px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 32px;
+    height: 32px;
+    background-color: #56345f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    margin: 0px;
+    border-radius: 7px;
+  }
+  
+  .instagramewhatssap {
+    position: relative;
+    top: -23px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    position: relative;
+  }
+  
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .zoom {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.3);
+  }
+  
+  
